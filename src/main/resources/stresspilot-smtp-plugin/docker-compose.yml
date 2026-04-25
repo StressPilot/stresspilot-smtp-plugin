@@ -19,4 +19,4 @@ services:
       - "3993:3993" # IMAPS (SSL)
       - "7080:7080" # API / UI (if enabled)
     environment:
-      - GREENMAIL_OPTS=-Dgreenmail.setup.test.all -Dgreenmail.users=admin:password@stresspilot.dev -Dgreenmail.auth.disabled=false
+      - GREENMAIL_OPTS=-Dgreenmail.setup.test.all -Dgreenmail.hostname=0.0.0.0 -Dgreenmail.users=admin:password@stresspilot.dev -Dgreenmail.auth.disabled=false

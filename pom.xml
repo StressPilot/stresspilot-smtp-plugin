@@ -112,7 +112,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
-                                        <Plugin-Id>smtp-executor-plugin</Plugin-Id>
+                                        <Plugin-Id>stresspilot-smtp-plugin</Plugin-Id>
                                         <Plugin-Version>1.0.0</Plugin-Version>
                                         <Plugin-Provider>Zeann3th</Plugin-Provider>
                                         <Plugin-Description>SMTP and IMAP plugin for load testing email sending and delivery verification.</Plugin-Description>

@@ -18,6 +18,8 @@ services:
       - "7080:80"   # Web UI
     environment:
       - ServerOptions__HostName=0.0.0.0
+      - ServerOptions__AuthenticationRequired=true
+      - ServerOptions__SmtpAllowAnyCredentials=false
+      - ServerOptions__Users__0__Username=admin
+      - ServerOptions__Users__0__Password=password
       - RelayOptions__Enabled=false
-      - AuthenticationOptions__Enabled=true
-      - AuthenticationOptions__Credentials=admin:password
